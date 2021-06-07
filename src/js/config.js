@@ -1,5 +1,6 @@
 import apiService from './apiService';
 import refs from './refs';
+
 import {
     appendGalleryMarkup,
     clearMarkup,
@@ -11,6 +12,7 @@ import {
 
 refs.searchInput.addEventListener('submit', onSearch);
 refs.button.addEventListener('click', onLoadMore);
+
 function onSearch(e){    
     e.preventDefault();                
     
@@ -25,3 +27,10 @@ function onLoadMore(e) {
     
     apiService.fetchPics().then(appendGalleryMarkup);
 }
+function openModalWindow(e) {
+    if (e.target.nodeName !== 'IMG') {
+      return;
+    }    
+    const largeImageURL = e.target.dataset.source;  
+    createModal(largeImageURL);
+  }
