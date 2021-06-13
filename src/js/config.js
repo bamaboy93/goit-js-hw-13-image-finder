@@ -9,8 +9,6 @@ import {
 
 
 refs.searchInput.addEventListener('submit', onSearch);
-
-
 refs.button.addEventListener('click', onLoadMore);
 
 function onSearch(e){    
