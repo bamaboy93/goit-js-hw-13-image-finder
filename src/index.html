@@ -17,12 +17,14 @@
   <body>
     <div>
       <div class="container">
-        <form class="search-form" id="search-form">
-          <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-        </form>
-      
+        <div class="form">
+          
+          <form class="search-form" id="search-form" method="get">
+            <input name="query" placeholder="Search images..." type="search">
+            <button class="search-btn" type="submit">&#128269;</button>
+          </form>
+        </div>
         <ul class="gallery">
-      
         </ul>
       
         <button type="button" class="btn is-hidden" data-action="load-more">

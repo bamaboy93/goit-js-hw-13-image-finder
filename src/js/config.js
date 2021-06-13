@@ -8,9 +8,9 @@ import {
 } from './markup';
 
 
-
-
 refs.searchInput.addEventListener('submit', onSearch);
+refs.searchbtn.addEventListener('click', onSearch);
+
 refs.button.addEventListener('click', onLoadMore);
 
 function onSearch(e){    

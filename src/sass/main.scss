@@ -47,17 +47,21 @@ body {
     width: 1600px;
   }
 }
-.search-form {
+.form {
   display: flex;
   justify-content: center;
+  align-items: baseline;
+  margin-top: 30px;
+  height: 40px;
 }
+
 .search-form input {
   @media screen and (min-width: 768px) {
     width: 500px;
   }
-  display: block;
+
   padding: 10px 15px;
-  margin-top: 30px;
+
   width: 350px;
 }
 .search-form input:focus {
@@ -117,6 +121,14 @@ body {
   margin-bottom: 80px;
   display: block;
   text-align: center;
+}
+.search-btn {
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  height: 40px;
+  margin-left: 10px;
+  padding: 10px 20px;
 }
 .label {
   font-size: 25px;
