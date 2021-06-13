@@ -62,10 +62,13 @@ body {
 
   padding: 10px 15px;
 
-  width: 350px;
+  width: 300px;
 }
 .search-form input:focus {
   outline: 2px solid rosybrown;
+  @media screen and (max-width: 768px) {
+    outline: none;
+  }
 }
 .gallery {
   @media screen and (min-width: 1600px) {
@@ -125,6 +128,8 @@ body {
 .search-btn {
   @media screen and (min-width: 480px) {
     padding: 5px 10px;
+    background-color: rosybrown;
+    outline: 1px solid black;
   }
   border: none;
   border-radius: 3px;
